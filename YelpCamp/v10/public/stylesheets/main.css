@@ -1,0 +1,15 @@
+.thumbnail img {
+    width: 100%;
+}
+
+#info {
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.delete-button {
+    display: inline;
+}
