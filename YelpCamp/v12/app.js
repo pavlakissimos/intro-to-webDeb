@@ -1,18 +1,18 @@
-var express        = require("express"),
-    app            = express(),
-    bodyParser     = require("body-parser"),
-    mongoose       = require("mongoose"),
-    flash          = require("connect-flash"),
-    passport       = require("passport"),
-    LocalStrategy  = require("passport-local"),
-    expressSession = require("express-session"),
-    User           = require("./models/user"),
-    methodOveride = require("method-override"),
-    expressSanitizer     = require("express-sanitizer"),
-    seedDB         = require("./seeds");
+var express          = require("express"),
+    app              = express(),
+    bodyParser       = require("body-parser"),
+    mongoose         = require("mongoose"),
+    flash            = require("connect-flash"),
+    passport         = require("passport"),
+    LocalStrategy    = require("passport-local"),
+    expressSession   = require("express-session"),
+    User             = require("./models/user"),
+    methodOveride    = require("method-override"),
+    expressSanitizer = require("express-sanitizer"),
+    seedDB           = require("./seeds");
     
-var commentRoutes    = require("./routes/comments"),
-    campgroundRoutes = require("./routes/campgrounds"),
+var commentRoutes     = require("./routes/comments"),
+    campgroundRoutes  = require("./routes/campgrounds"),
     indexRoutes       = require("./routes/index");
     
 mongoose.connect("mongodb://localhost/yelp_camp");
